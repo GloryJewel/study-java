@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+version 'unspecified'
+
+sourceCompatibility = 1.8
+
+repositories {
+
+    mavenLocal()
+    mavenCentral()
+//    maven {
+//        url '/Users/youngju/.m2/repository'
+//    }
+}
+
+dependencies {
+    //implementation project(':the-java')
+    implementation 'com.gloryjewel:the-java:2.0-SNAPSHOT'
+
+    //implementation files('/Users/youngju/Desktop/test/common/build/libs/common.jar')
+    //implementation files('libs/common.jar')
+    //implementation files('/Users/youngju/.m2/repository/com/gloryjewel/the-java/1.0-SNAPSHOT/the-java-1.0-SNAPSHOT.jar')
+    //implementation files('/Users/youngju/Desktop/test/the-java/build/libs/the-java-1.0-SNAPSHOT.jar')
+    //implementation files('libs/the-java-1.0-SNAPSHOT.jar')
+}
