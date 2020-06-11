@@ -4,4 +4,5 @@ include 'the-java'
 include 'java-agent'
 include 'local-repository'
 include 'common'
+include 'magic-moja'
 

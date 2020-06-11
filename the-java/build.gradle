@@ -18,12 +18,14 @@ repositories {
 }
 
 dependencies {
-    //runtime project(':java-agent')
+    compile project(':magic-moja')
     compile group: 'net.bytebuddy', name: 'byte-buddy', version: '1.10.10'
     compile group: 'cglib', name: 'cglib', version: '3.3.0'
 
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
+    //annotationProcessor 'com.google.auto.service:auto-service:1.0-rc7'
+    annotationProcessor project(':magic-moja')
 
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
