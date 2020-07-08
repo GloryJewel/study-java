@@ -2,7 +2,9 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.*;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -262,100 +264,6 @@ public class LeetCode {
 
         Assertions.assertFalse(false);
 
-    }
-
-    @Test
-    void test(){
-
-
-        int finger = 1;
-        final int maxCount = 3;
-        final int weakFinger = 2;
-        int maxCountNumber = 0;
-
-        int son = 1;
-
-        while( weakFinger < maxCount){
-
-            if(son < 5 ){
-
-                son++;
-            }else{
-
-                son--;
-            }
-
-
-
-            maxCountNumber++;
-        }
-
-    }
-
-    int numbers(int number){
-
-        boolean flag = true;
-
-        if(number == 5)
-            flag = false;
-
-        if(number == 1)
-            flag = true;
-
-        if(flag){
-
-            number++;
-        }else{
-
-            number--;
-        }
-
-        return 0;
-    }
-
-    @Test
-    void ttestloop(){
-
-        final int weakFinger = 2;
-        final int maxCount = 48;
-
-        boolean flag = true;
-        int number = 0;
-        int maxCountNumber = 0;
-
-        int weakCount = 0;
-
-        while (true){
-
-            if(number == 5)
-                flag = false;
-
-            if(number == 1)
-                flag = true;
-
-            if(flag){
-
-                number++;
-            }else{
-
-                number--;
-            }
-
-            if(weakFinger ==  number)
-                weakCount++;
-
-            if(weakCount == maxCount +1){
-
-                System.out.println(maxCount);
-                break;
-            }
-
-            maxCountNumber++;
-
-            //System.out.println(number);
-        }
-
-        System.out.println(maxCountNumber);
     }
 
     @Test
