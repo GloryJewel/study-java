@@ -266,6 +266,7 @@ public class LeetCode {
 
     }
 
+    // 최대수 648의 2의 배수 숫자중에 더해서 648인 숫자를 구하여라
     @Test
     void getCount() {
 
@@ -354,6 +355,8 @@ public class LeetCode {
         int asn = -1;
 
         String strs = "abebeaedeac";
+
+        //strs.chars().boxed();
 
         Stream<Character> characterStream = strs.chars()
                 .mapToObj(c -> (char) c);

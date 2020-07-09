@@ -16,8 +16,8 @@ repositories {
 }
 
 dependencies {
-    //implementation project(':the-java')
-    implementation 'com.gloryjewel:the-java:2.0-SNAPSHOT'
+    implementation project(':the-java')
+    //implementation 'com.gloryjewel:the-java:2.0-SNAPSHOT'
 
     //implementation files('/Users/youngju/Desktop/test/common/build/libs/common.jar')
     //implementation files('libs/common.jar')
